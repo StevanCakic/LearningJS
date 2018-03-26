@@ -11,31 +11,29 @@ Examlpe input: [1965, 2008, 1992]
 Example output: [true, false, true]
 */
 
-var yearofBir=[1992,2000,1985];
- function printFullAge (yearofBir)
- {
-     var ages =[];
-     var fullages =[];
-//fill array ages
-     for (var i=0; i < yearofBir.length; i++)
-     {
-         ages = 2018- yearofBir[i];
-     }
+var yearofBir = [1992, 2000, 1985];
+function printFullAge(yearofBir) {
+  var ages = [];
+  var fullages = [];
+  //fill array ages
+  for (var i = 0; i < yearofBir.length; i++) {
+    ages[i] = 2018 - yearofBir[i];
+  }
 
-for (var i=0 ; i< ages.length;i++ )
-{
-    if(ages >= 18)
-    { 
-        console.log ('Person '+ (i=1)+ ' is full age');
-        fullages.push(true);
+  for (var i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+      console.log("Person " + (i + 1) + " is full age");
+      fullages.push(true);
+    } else {
+      console.log("Person " + (i + 1) + " is not 18 yet");
+      fullages.push(false);
+    }
+  }
+  return fullages;
 }
-else {
-    console.log('Person'+(+1)+'is not 18 yet');
-    fullages.push(false);
-}
-}
-return fullages;
- }
-var yearofBirth2=[2010,1875,2005];
- var full_1= printFullAge (yearofBir);
- var full_2=printFullAge
+var yearofBirth2 = [2010, 1875, 2005];
+var full_1 = printFullAge(yearofBir);
+var full_2 = printFullAge(yearofBirth2);
+
+console.log(full_1);
+console.log(full_2);
