@@ -1,0 +1,3 @@
+# TeachingJS
+
+JavaScript course
